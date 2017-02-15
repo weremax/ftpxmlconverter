@@ -1,0 +1,49 @@
+-- phpMyAdmin SQL Dump
+-- version 4.5.2
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Feb 15, 2017 at 09:03 PM
+-- Server version: 10.1.13-MariaDB
+-- PHP Version: 5.6.23
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `ftpxml`
+--
+CREATE DATABASE IF NOT EXISTS `ftpxml` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `ftpxml`;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `conversion`
+--
+
+DROP TABLE IF EXISTS `conversion`;
+CREATE TABLE IF NOT EXISTS `conversion` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `start` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `data` text NOT NULL,
+  `output` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `conversion`
+--
+
+INSERT INTO `conversion` (`id`, `start`, `data`, `output`) VALUES
+(1, '2017-02-15 20:01:29', '<?xml version="1.0" encoding="UTF-8"?>\r\n<CATALOG>\r\n  <CD>\r\n    <TITLE>Empire Burlesque</TITLE>\r\n    <ARTIST>Bob Dylan</ARTIST>\r\n    <COUNTRY>USA</COUNTRY>\r\n    <COMPANY>Columbia</COMPANY>\r\n    <PRICE>10.90</PRICE>\r\n    <YEAR>1985</YEAR>\r\n  </CD>\r\n  <CD>\r\n    <TITLE>Hide your heart</TITLE>\r\n    <ARTIST>Bonnie Tyler</ARTIST>\r\n    <COUNTRY>UK</COUNTRY>\r\n    <COMPANY>CBS Records</COMPANY>\r\n    <PRICE>9.90</PRICE>\r\n    <YEAR>1988</YEAR>\r\n  </CD>\r\n  <CD>\r\n    <TITLE>Greatest Hits</TITLE>\r\n    <ARTIST>Dolly Parton</ARTIST>\r\n    <COUNTRY>USA</COUNTRY>\r\n    <COMPANY>RCA</COMPANY>\r\n    <PRICE>9.90</PRICE>\r\n    <YEAR>1982</YEAR>\r\n  </CD>\r\n  <CD>\r\n    <TITLE>Still got the blues</TITLE>\r\n    <ARTIST>Gary Moore</ARTIST>\r\n    <COUNTRY>UK</COUNTRY>\r\n    <COMPANY>Virgin records</COMPANY>\r\n    <PRICE>10.20</PRICE>\r\n    <YEAR>1990</YEAR>\r\n  </CD>\r\n  <CD>\r\n    <TITLE>Eros</TITLE>\r\n    <ARTIST>Eros Ramazzotti</ARTIST>\r\n    <COUNTRY>EU</COUNTRY>\r\n    <COMPANY>BMG</COMPANY>\r\n    <PRICE>9.90</PRICE>\r\n    <YEAR>1997</YEAR>\r\n  </CD>\r\n  <CD>\r\n    <TITLE>One night only</TITLE>\r\n    <ARTIST>Bee Gees</ARTIST>\r\n    <COUNTRY>UK</COUNTRY>\r\n    <COMPANY>Polydor</COMPANY>\r\n    <PRICE>10.90</PRICE>\r\n    <YEAR>1998</YEAR>\r\n  </CD>\r\n  <CD>\r\n    <TITLE>Sylvias Mother</TITLE>\r\n    <ARTIST>Dr.Hook</ARTIST>\r\n    <COUNTRY>UK</COUNTRY>\r\n    <COMPANY>CBS</COMPANY>\r\n    <PRICE>8.10</PRICE>\r\n    <YEAR>1973</YEAR>\r\n  </CD>\r\n  <CD>\r\n    <TITLE>Maggie May</TITLE>\r\n    <ARTIST>Rod Stewart</ARTIST>\r\n    <COUNTRY>UK</COUNTRY>\r\n    <COMPANY>Pickwick</COMPANY>\r\n    <PRICE>8.50</PRICE>\r\n    <YEAR>1990</YEAR>\r\n  </CD>\r\n  <CD>\r\n    <TITLE>Romanza</TITLE>\r\n    <ARTIST>Andrea Bocelli</ARTIST>\r\n    <COUNTRY>EU</COUNTRY>\r\n    <COMPANY>Polydor</COMPANY>\r\n    <PRICE>10.80</PRICE>\r\n    <YEAR>1996</YEAR>\r\n  </CD>\r\n  <CD>\r\n    <TITLE>When a man loves a woman</TITLE>\r\n    <ARTIST>Percy Sledge</ARTIST>\r\n    <COUNTRY>USA</COUNTRY>\r\n    <COMPANY>Atlantic</COMPANY>\r\n    <PRICE>8.70</PRICE>\r\n    <YEAR>1987</YEAR>\r\n  </CD>\r\n  <CD>\r\n    <TITLE>Black angel</TITLE>\r\n    <ARTIST>Savage Rose</ARTIST>\r\n    <COUNTRY>EU</COUNTRY>\r\n    <COMPANY>Mega</COMPANY>\r\n    <PRICE>10.90</PRICE>\r\n    <YEAR>1995</YEAR>\r\n  </CD>\r\n  <CD>\r\n    <TITLE>1999 Grammy Nominees</TITLE>\r\n    <ARTIST>Many</ARTIST>\r\n    <COUNTRY>USA</COUNTRY>\r\n    <COMPANY>Grammy</COMPANY>\r\n    <PRICE>10.20</PRICE>\r\n    <YEAR>1999</YEAR>\r\n  </CD>\r\n  <CD>\r\n    <TITLE>For the good times</TITLE>\r\n    <ARTIST>Kenny Rogers</ARTIST>\r\n    <COUNTRY>UK</COUNTRY>\r\n    <COMPANY>Mucik Master</COMPANY>\r\n    <PRICE>8.70</PRICE>\r\n    <YEAR>1995</YEAR>\r\n  </CD>\r\n  <CD>\r\n    <TITLE>Big Willie style</TITLE>\r\n    <ARTIST>Will Smith</ARTIST>\r\n    <COUNTRY>USA</COUNTRY>\r\n    <COMPANY>Columbia</COMPANY>\r\n    <PRICE>9.90</PRICE>\r\n    <YEAR>1997</YEAR>\r\n  </CD>\r\n  <CD>\r\n    <TITLE>Tupelo Honey</TITLE>\r\n    <ARTIST>Van Morrison</ARTIST>\r\n    <COUNTRY>UK</COUNTRY>\r\n    <COMPANY>Polydor</COMPANY>\r\n    <PRICE>8.20</PRICE>\r\n    <YEAR>1971</YEAR>\r\n  </CD>\r\n  <CD>\r\n    <TITLE>Soulsville</TITLE>\r\n    <ARTIST>Jorn Hoel</ARTIST>\r\n    <COUNTRY>Norway</COUNTRY>\r\n    <COMPANY>WEA</COMPANY>\r\n    <PRICE>7.90</PRICE>\r\n    <YEAR>1996</YEAR>\r\n  </CD>\r\n  <CD>\r\n    <TITLE>The very best of</TITLE>\r\n    <ARTIST>Cat Stevens</ARTIST>\r\n    <COUNTRY>UK</COUNTRY>\r\n    <COMPANY>Island</COMPANY>\r\n    <PRICE>8.90</PRICE>\r\n    <YEAR>1990</YEAR>\r\n  </CD>\r\n  <CD>\r\n    <TITLE>Stop</TITLE>\r\n    <ARTIST>Sam Brown</ARTIST>\r\n    <COUNTRY>UK</COUNTRY>\r\n    <COMPANY>A and M</COMPANY>\r\n    <PRICE>8.90</PRICE>\r\n    <YEAR>1988</YEAR>\r\n  </CD>\r\n  <CD>\r\n    <TITLE>Bridge of Spies</TITLE>\r\n    <ARTIST>T''Pau</ARTIST>\r\n    <COUNTRY>UK</COUNTRY>\r\n    <COMPANY>Siren</COMPANY>\r\n    <PRICE>7.90</PRICE>\r\n    <YEAR>1987</YEAR>\r\n  </CD>\r\n  <CD>\r\n    <TITLE>Private Dancer</TITLE>\r\n    <ARTIST>Tina Turner</ARTIST>\r\n    <COUNTRY>UK</COUNTRY>\r\n    <COMPANY>Capitol</COMPANY>\r\n    <PRICE>8.90</PRICE>\r\n    <YEAR>1983</YEAR>\r\n  </CD>\r\n  <CD>\r\n    <TITLE>Midt om natten</TITLE>\r\n    <ARTIST>Kim Larsen</ARTIST>\r\n    <COUNTRY>EU</COUNTRY>\r\n    <COMPANY>Medley</COMPANY>\r\n    <PRICE>7.80</PRICE>\r\n    <YEAR>1983</YEAR>\r\n  </CD>\r\n  <CD>\r\n    <TITLE>Pavarotti Gala Concert</TITLE>\r\n    <ARTIST>Luciano Pavarotti</ARTIST>\r\n    <COUNTRY>UK</COUNTRY>\r\n    <COMPANY>DECCA</COMPANY>\r\n    <PRICE>9.90</PRICE>\r\n    <YEAR>1991</YEAR>\r\n  </CD>\r\n  <CD>\r\n    <TITLE>The dock of the bay</TITLE>\r\n    <ARTIST>Otis Redding</ARTIST>\r\n    <COUNTRY>USA</COUNTRY>\r\n    <COMPANY>Atlantic</COMPANY>\r\n    <PRICE>7.90</PRICE>\r\n    <YEAR>1987</YEAR>\r\n  </CD>\r\n  <CD>\r\n    <TITLE>Picture book</TITLE>\r\n    <ARTIST>Simply Red</ARTIST>\r\n    <COUNTRY>EU</COUNTRY>\r\n    <COMPANY>Elektra</COMPANY>\r\n    <PRICE>7.20</PRICE>\r\n    <YEAR>1985</YEAR>\r\n  </CD>\r\n  <CD>\r\n    <TITLE>Red</TITLE>\r\n    <ARTIST>The Communards</ARTIST>\r\n    <COUNTRY>UK</COUNTRY>\r\n    <COMPANY>London</COMPANY>\r\n    <PRICE>7.80</PRICE>\r\n    <YEAR>1987</YEAR>\r\n  </CD>\r\n  <CD>\r\n    <TITLE>Unchain my heart</TITLE>\r\n    <ARTIST>Joe Cocker</ARTIST>\r\n    <COUNTRY>USA</COUNTRY>\r\n    <COMPANY>EMI</COMPANY>\r\n    <PRICE>8.20</PRICE>\r\n    <YEAR>1987</YEAR>\r\n  </CD>\r\n</CATALOG>\r\n', '{"CATALOG":{"CD":[{"TITLE":"Empire Burlesque","ARTIST":"Bob Dylan","COUNTRY":"USA","COMPANY":"Columbia","PRICE":"10.90","YEAR":"1985"},{"TITLE":"Hide your heart","ARTIST":"Bonnie Tyler","COUNTRY":"UK","COMPANY":"CBS Records","PRICE":"9.90","YEAR":"1988"},{"TITLE":"Greatest Hits","ARTIST":"Dolly Parton","COUNTRY":"USA","COMPANY":"RCA","PRICE":"9.90","YEAR":"1982"},{"TITLE":"Still got the blues","ARTIST":"Gary Moore","COUNTRY":"UK","COMPANY":"Virgin records","PRICE":"10.20","YEAR":"1990"},{"TITLE":"Eros","ARTIST":"Eros Ramazzotti","COUNTRY":"EU","COMPANY":"BMG","PRICE":"9.90","YEAR":"1997"},{"TITLE":"One night only","ARTIST":"Bee Gees","COUNTRY":"UK","COMPANY":"Polydor","PRICE":"10.90","YEAR":"1998"},{"TITLE":"Sylvias Mother","ARTIST":"Dr.Hook","COUNTRY":"UK","COMPANY":"CBS","PRICE":"8.10","YEAR":"1973"},{"TITLE":"Maggie May","ARTIST":"Rod Stewart","COUNTRY":"UK","COMPANY":"Pickwick","PRICE":"8.50","YEAR":"1990"},{"TITLE":"Romanza","ARTIST":"Andrea Bocelli","COUNTRY":"EU","COMPANY":"Polydor","PRICE":"10.80","YEAR":"1996"},{"TITLE":"When a man loves a woman","ARTIST":"Percy Sledge","COUNTRY":"USA","COMPANY":"Atlantic","PRICE":"8.70","YEAR":"1987"},{"TITLE":"Black angel","ARTIST":"Savage Rose","COUNTRY":"EU","COMPANY":"Mega","PRICE":"10.90","YEAR":"1995"},{"TITLE":"1999 Grammy Nominees","ARTIST":"Many","COUNTRY":"USA","COMPANY":"Grammy","PRICE":"10.20","YEAR":"1999"},{"TITLE":"For the good times","ARTIST":"Kenny Rogers","COUNTRY":"UK","COMPANY":"Mucik Master","PRICE":"8.70","YEAR":"1995"},{"TITLE":"Big Willie style","ARTIST":"Will Smith","COUNTRY":"USA","COMPANY":"Columbia","PRICE":"9.90","YEAR":"1997"},{"TITLE":"Tupelo Honey","ARTIST":"Van Morrison","COUNTRY":"UK","COMPANY":"Polydor","PRICE":"8.20","YEAR":"1971"},{"TITLE":"Soulsville","ARTIST":"Jorn Hoel","COUNTRY":"Norway","COMPANY":"WEA","PRICE":"7.90","YEAR":"1996"},{"TITLE":"The very best of","ARTIST":"Cat Stevens","COUNTRY":"UK","COMPANY":"Island","PRICE":"8.90","YEAR":"1990"},{"TITLE":"Stop","ARTIST":"Sam Brown","COUNTRY":"UK","COMPANY":"A and M","PRICE":"8.90","YEAR":"1988"},{"TITLE":"Bridge of Spies","ARTIST":"T''Pau","COUNTRY":"UK","COMPANY":"Siren","PRICE":"7.90","YEAR":"1987"},{"TITLE":"Private Dancer","ARTIST":"Tina Turner","COUNTRY":"UK","COMPANY":"Capitol","PRICE":"8.90","YEAR":"1983"},{"TITLE":"Midt om natten","ARTIST":"Kim Larsen","COUNTRY":"EU","COMPANY":"Medley","PRICE":"7.80","YEAR":"1983"},{"TITLE":"Pavarotti Gala Concert","ARTIST":"Luciano Pavarotti","COUNTRY":"UK","COMPANY":"DECCA","PRICE":"9.90","YEAR":"1991"},{"TITLE":"The dock of the bay","ARTIST":"Otis Redding","COUNTRY":"USA","COMPANY":"Atlantic","PRICE":"7.90","YEAR":"1987"},{"TITLE":"Picture book","ARTIST":"Simply Red","COUNTRY":"EU","COMPANY":"Elektra","PRICE":"7.20","YEAR":"1985"},{"TITLE":"Red","ARTIST":"The Communards","COUNTRY":"UK","COMPANY":"London","PRICE":"7.80","YEAR":"1987"},{"TITLE":"Unchain my heart","ARTIST":"Joe Cocker","COUNTRY":"USA","COMPANY":"EMI","PRICE":"8.20","YEAR":"1987"}]}}');
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
