@@ -3,6 +3,13 @@
 NodeJS Ftp to a location download a xml file. Take that file and convert the xml to json.
 Store the original data and the json in mysql.
 
+### To Use:
+
+* clone the repo
+* npm install
+* ftp the file to your desired location
+* update the `ftpConnection` and `connection` in index.js for the ftp and mysql connections. 
+
 ### Packages
 
 * fs
